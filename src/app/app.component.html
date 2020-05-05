@@ -1,0 +1,16 @@
+
+<p >Observable Basics</p>
+<hr/>
+<b>Observable Data </b>
+ <div *ngFor="let f of fruits"> 
+   {{ f }}
+ </div>
+ <hr>
+<div>
+  <b>Error Status :</b>
+ {{(anyErrors===false)? 'Error Occured ' : 'It All Good'}}
+  <hr>
+</div>
+<div > <b> completion status : </b> {{ (finished===true) ? 'Observer Completed ': 'Not Complete' }}</div>
+<hr>
+<button (click)="Start()">Start Emitting</button>
